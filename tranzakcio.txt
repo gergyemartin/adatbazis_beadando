@@ -1,0 +1,16 @@
+insert [tranzakcio] ([tranzakcio_id],[rendszam])
+select N'1', N'QRS345' union all
+select N'2', N'VWX234' union all
+select N'3', N'MNO345' union all
+select N'4', N'STU901' union all
+select N'5', N'ABC123' union all
+select N'6', N'GHI789' union all
+select N'7', N'NOP012' union all
+select N'8', N'JKL012' union all
+select N'9', N'YZA567' union all
+select N'10', N'KLM789' union all
+select N'11', N'EFG123' union all
+select N'12', N'PQR678' union all
+select N'13', N'HIJ456' union all
+select N'14', N'DEF456' union all
+select N'15', N'BCD890';
