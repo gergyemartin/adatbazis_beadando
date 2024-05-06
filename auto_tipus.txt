@@ -1,0 +1,7 @@
+insert [auto_tipus] ([modell_id],[marka],[tipus])
+select N'0',N'Mercedes',N'G65' UNION ALL
+select N'1',N'BMW',N'X7' UNION ALL
+select N'2',N'Volkswagen',N'Arteon' UNION ALL
+select N'3',N'Skoda',N'Octavia' UNION ALL
+select N'4',N'Opel',N'Corsa' UNION ALL
+select N'5',N'Skoda',N'Fabia';
