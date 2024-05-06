@@ -1,0 +1,16 @@
+insert [eladasi_infok] ([tranzakcio_id],[ker_id],[optimalis_eladasi_ar],[minimum_eladasi_ar])
+select N'1', N'3', N'27500000', N'17000000' union all
+select N'2', N'0', N'430500', N'245000' union all
+select N'3', N'1', N'1240000', N'765000' union all
+select N'4', N'0', N'771000', N'435600' union all
+select N'5', N'1', N'27500000', N'17210000' union all
+select N'6', N'3', N'540000', N'230000' union all
+select N'7', N'2', N'1900000', N'1275000' union all
+select N'8', N'2', N'11500000', N'9500000' union all
+select N'9', N'2', N'2900000', N'2000000' union all
+select N'10', N'3', N'1000000', N'620000' union all
+select N'11', N'3', N'8267000', N'7000000' union all
+select N'12', N'0', N'210000', N'105000' union all
+select N'13', N'0', N'6000000', N'4250000' union all
+select N'14', N'0', N'11000000', N'9000000' union all
+select N'15', N'1', N'275000', N'150000';
