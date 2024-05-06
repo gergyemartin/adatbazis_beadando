@@ -1,0 +1,56 @@
+-- CREATE TABLE commands
+CREATE TABLE auto_helye (
+    rendszam                              VARCHAR(255) NOT NULL,
+    raktar_id                             NUMERIC NOT NULL,
+);
+
+CREATE TABLE auto_tipus (
+    modell_id NUMERIC NOT NULL,
+    marka     VARCHAR(255) NOT NULL,
+    tipus     VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE auto_tulajdonsag (
+    rendszam              VARCHAR(255) NOT NULL,
+    modell_id             NUMERIC NOT NULL,
+    hasznalt              NUMERIC NOT NULL,
+    allapot               NUMERIC NOT NULL,
+    km                    NUMERIC NOT NULL,
+    listaar               NUMERIC NOT NULL,
+);
+
+CREATE TABLE eladasi_infok (
+    tranzakcio_id                        NUMERIC NOT NULL,
+    ker_id                               NUMERIC NOT NULL,
+    optimalis_eladasi_ar                 NUMERIC NOT NULL,
+    minimum_eladasi_ar                   NUMERIC NOT NULL,
+);
+
+CREATE TABLE kereskedok (
+    ker_id     NUMERIC NOT NULL,
+    nev        VARCHAR(255) NOT NULL,
+    telefon_id NUMERIC NOT NULL,
+    bonusz     NUMERIC NOT NULL
+);
+
+CREATE TABLE tarolasi_helyek (
+    raktar_id  NUMERIC NOT NULL,
+    raktar_nev VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE telefon (
+    telefon_id            NUMERIC NOT NULL,
+    telefonszam           VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE tranzakcio (
+    tranzakcio_id                         NUMERIC NOT NULL,
+    rendszam                              VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE veteli_tulajdonsag (
+    rendszam                              VARCHAR(255) NOT NULL,
+    elado_neve                            VARCHAR(255) NOT NULL,
+    vetelar                               NUMERIC NOT NULL,
+    vetel_idopont                         DATE NOT NULL,
+);
