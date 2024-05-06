@@ -1,0 +1,4 @@
+insert [tarolasi_helyek] ([raktar_id],[raktar_nev])
+select N'1',N'Budapesti raktár' union all
+select N'2',N'Érdi raktárhely' union all
+select N'3',N'Kecskeméti raktárhely';
