@@ -1,0 +1,16 @@
+insert [auto_helye] ([rendszam],[raktar_id])
+select N'QRS345', N'3' union all
+select N'VWX234', N'1' union all
+select N'MNO345', N'3' union all
+select N'STU901', N'2' union all
+select N'ABC123', N'1' union all
+select N'GHI789', N'3' union all
+select N'NOP012', N'2' union all
+select N'JKL012', N'1' union all
+select N'YZA567', N'2' union all
+select N'KLM789', N'3' union all
+select N'EFG123', N'3' union all
+select N'PQR678', N'2' union all
+select N'HIJ456', N'1' union all
+select N'DEF456', N'3' union all
+select N'BCD890', N'2';
