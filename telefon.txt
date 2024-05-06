@@ -1,0 +1,5 @@
+insert [telefon] ([telefon_id],[telefonszam])
+select N'0',N'36701205010' UNION ALL
+select N'1',N'36201104744' UNION ALL
+select N'2',N'36704789889' UNION ALL
+select N'3',N'36708548997';
