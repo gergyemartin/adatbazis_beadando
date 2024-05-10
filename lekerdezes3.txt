@@ -1,0 +1,8 @@
+--Raktárankénti kocsik száma, átlagos km óraszám és listaár. A végén összegezve mindent
+SELECT	IIF(GROUPING(th.raktar_nev) = 1,'Összesen',th.raktar_nev) AS 'Raktár helye',
+		COUNT(at.modell_id) AS 'Kocsik raktáranként',
+        AVG(at.km) AS 'Km óra állás átlagosan',
+        AVG(at.listaar) AS 'Átlagos listaár'
+FROM	auto_tulajdonsag at JOIN auto_helye ah ON at.rendszam = ah.rendszam
+		JOIN tarolasi_helyek th ON ah.raktar_id = th.raktar_id
+GROUP BY ROLLUP(th.raktar_nev)
