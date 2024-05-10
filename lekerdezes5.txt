@@ -1,4 +1,4 @@
---Adott kocsikról melyik értékesítőnél lehet érdeklődni telefonon
+--Adott kocsiról melyik értékesítőnél lehet érdeklődni telefonon
 SELECT	at.rendszam AS 'Rendszám',
 		aut.marka AS 'Márka',
         aut.tipus AS 'Típus',
