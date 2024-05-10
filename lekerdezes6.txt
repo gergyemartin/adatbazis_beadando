@@ -1,0 +1,5 @@
+--Mennyi bónuszt kapnak az egyes kereskedők, ha eladják az összes autót
+SELECT	IIF(GROUPING(k.nev) = 1,'Összesen',k.nev) AS 'Kereskedő neve',
+		SUM(k.bonusz) AS 'Összes bónusz'
+FROM kereskedok k JOIN eladasi_infok e ON k.ker_id = e.ker_id
+GROUP BY ROLLUP(k.nev)
