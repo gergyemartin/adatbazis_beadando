@@ -1,0 +1,12 @@
+--Az 5 legfrissebb vásárlása a cégnek, egyes tulajdonságok vele kapcsolatban
+SELECT	at.rendszam AS 'Rendszám',
+	vt.elado_neve AS 'Eladó neve',
+        at.allapot AS 'Állapot',
+        aut.marka AS 'Márka',
+        aut.tipus AS 'Típus',
+        vt.vetel_idopont AS 'Vételi időpont'
+FROM auto_tulajdonsag at JOIN veteli_tulajdonsag vt ON at.rendszam = vt.rendszam
+	JOIN auto_tipus aut ON at.modell_id =aut.modell_id
+order BY vt.vetel_idopont DESC
+OFFSET 0 ROWS
+FETCH NEXT 5 ROWS ONLY;

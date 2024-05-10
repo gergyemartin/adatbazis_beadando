@@ -1,0 +1,5 @@
+--Kereskedőnként mennyi a maximális haszonszint,amit hozhat az összes rá bízott eladás után
+SELECT	k.nev AS 'Kereskedő',
+		SUM(optimalis_eladasi_ar - minimum_eladasi_ar) AS 'Maximum elérhető haszon'
+FROM eladasi_infok ei JOIN kereskedok k on ei.ker_id = k.ker_id
+group by k.nev 
