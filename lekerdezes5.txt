@@ -1,0 +1,11 @@
+--Adott kocsikról melyik értékesítőnél lehet érdeklődni telefonon
+SELECT	at.rendszam AS 'Rendszám',
+		aut.marka AS 'Márka',
+        aut.tipus AS 'Típus',
+        k.nev AS 'Értékesítő neve',
+        t.telefonszam AS 'Telefonszám'
+FROM	auto_tulajdonsag at JOIN tranzakcio tr ON at.rendszam = tr.rendszam
+		JOIN auto_tipus aut ON at.modell_id = aut.modell_id
+		JOIN eladasi_infok ei ON tr.tranzakcio_id = ei.tranzakcio_id
+        JOIN kereskedok k ON ei.ker_id = k.ker_id
+        JOIN telefon t ON k.telefon_id = t.telefon_id
