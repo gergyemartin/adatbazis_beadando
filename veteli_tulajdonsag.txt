@@ -1,0 +1,16 @@
+insert [veteli_tulajdonsag] ([rendszam],[elado_neve],[vetelar],[vetel_idopont])
+select N'QRS345',N'Kovács Zoltán',N'1950100',N'2022-11-05' union all
+select N'VWX234',N'Nagy Eszter',N'256287',N'2020-08-17' union all
+select N'MNO345',N'Tóth Ágnes',N'700000',N'2023-06-28' union all
+select N'STU901',N'Szabó Gábor',N'345500',N'2019-07-21' union all
+select N'ABC123',N'Kiss Péter',N'21000000',N'2021-12-09' union all
+select N'GHI789',N'Horváth Judit',N'358912',N'2024-02-03' union all
+select N'NOP012',N'Szilágyi Anna',N'1257890',N'2023-09-14' union all
+select N'JKL012',N'Farkas Tamás',N'9010243',N'2020-04-01' union all
+select N'YZA567',N'Balogh László',N'2500000',N'2022-10-19' union all
+select N'KLM789',N'Simon Katalin',N'670000',N'2023-03-07' union all
+select N'EFG123',N'Varga Éva',N'7200000',N'2021-05-28' union all
+select N'PQR678',N'Papp János',N'135000',N'2020-11-30' union all
+select N'HIJ456',N'Molnár Dávid',N'4800000',N'2023-01-16' union all
+select N'DEF456',N'Bíró Orsolya',N'9800000',N'2022-07-03' union all
+select N'BCD890',N'Sándor Réka',N'255000',N'2021-09-06';
