@@ -1,0 +1,16 @@
+insert [auto_tulajdonsag] ([rendszam],[modell_id],[hasznalt],[allapot],[km],[listaar])
+select N'QRS345', N'0', N'1', N'8', N'120000', N'19000000' union all
+select N'VWX234', N'1', N'1', N'7', N'175401', N'250000' union all
+select N'MNO345', N'2', N'0', N'9', N'1210', N'980000' union all
+select N'STU901', N'3', N'1', N'6', N'201471', N'500000' union all
+select N'ABC123', N'4', N'0', N'10', N'200', N'19500000' union all
+select N'GHI789', N'5', N'1', N'2', N'321045', N'400000' union all
+select N'NOP012', N'0', N'1', N'7', N'75412', N'1500000' union all
+select N'JKL012', N'1', N'0', N'8', N'500', N'11000000' union all
+select N'YZA567', N'2', N'1', N'1', N'478210', N'2400000' union all
+select N'KLM789', N'3', N'1', N'3', N'123000', N'950000' union all
+select N'EFG123', N'4', N'0', N'10', N'120', N'7000000' union all
+select N'PQR678', N'5', N'1', N'2', N'547120', N'100000' union all
+select N'HIJ456', N'0', N'1', N'4', N'254120', N'5000000' union all
+select N'DEF456', N'1', N'1', N'9', N'124075', N'10500000' union all
+select N'BCD890', N'2', N'0', N'10', N'1000', N'100000';
