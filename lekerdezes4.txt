@@ -1,0 +1,9 @@
+-- A lekérdezés megadja a legtöbb kilóméterrel rendelkező autó márkáját és típusát
+SELECT marka, tipus
+FROM auto_tipus
+WHERE modell_id = (
+  SELECT modell_id
+  FROM auto_tulajdonsag
+  WHERE km = (
+    SELECT MAX(km)
+    FROM auto_tulajdonsag))
